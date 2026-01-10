@@ -1,84 +1,104 @@
-# UoH Student Document Verification System
+🏫 UoH Student Document Verification System
+📌 Project Overview
 
-## 📌 Project Overview
+The UoH Student Document Verification System is a console-based Java application designed to manage and verify student documents in a university environment.
+The system allows students to submit documents and admins to verify or reject them, ensuring a structured and secure verification process.
 
-The **UoH Student Document Verification System** is a role-based web
-application designed to streamline the verification of student-submitted
-documents at the University of Hyderabad (UoH). The system enables
-students to securely upload documents, while administrators verify,
-approve, or reject submissions through a structured and secure workflow.
-Verified records are stored centrally and accessed only by authorized
-personnel.
+This project demonstrates the use of Object-Oriented Programming (OOP) concepts such as inheritance, encapsulation, polymorphism, and abstraction.
 
-------------------------------------------------------------------------
+🎯 Objectives
 
-## 🚀 Features
+To provide a simple system for student document submission
 
--   🔐 **Role-Based Authentication** (Student, Admin)
--   📤 **Secure Document Upload by Students**
--   ⚙️ **Automated Verification Workflow**
--   ✅ **Admin Approval / Rejection System**
--   📁 **Secure Storage of Verified Documents**
--   🔎 **Controlled Admin Access to Records**
--   📊 Centralized document management
+To allow administrators to verify documents
 
-------------------------------------------------------------------------
+To maintain document status tracking
 
-## 🛠️ Tech Stack
+To apply core Java OOP principles in a real-world scenario
 
--   **Frontend:** HTML, CSS\
--   **Backend:** PHP\
--   **Database:** MySQL
+🛠️ Technologies Used
 
-------------------------------------------------------------------------
+Programming Language: Java
 
-## 🧩 Database Concepts Used
+Interface: Console (CLI)
 
--   Relational Database Design\
--   Primary and Foreign Keys\
--   SQL Queries (CRUD Operations)\
--   Database Normalization\
--   Role-Based Access Control
+IDE: Any Java IDE (VS Code / IntelliJ / Eclipse)
 
-------------------------------------------------------------------------
+JDK Version: JDK 8 or above
 
-## 📂 Project Workflow
+👥 User Roles
+1️⃣ Student
 
-1.  Students log in and upload required documents.
-2.  Documents are stored securely in the system.
-3.  Admins review submitted documents.
-4.  Documents are approved or rejected by admins.
-5.  Verified records are stored for official access.
+Login using Student ID and Password
 
-------------------------------------------------------------------------
+View student dashboard
 
-## 📂 Project Use Case
+Submit documents
 
--   DBMS Mini / Academic Project\
--   University document verification systems\
--   Demonstration of role-based access control\
--   Secure document management solutions
+View submitted documents and verification status
 
-------------------------------------------------------------------------
+Logout
 
-## 📝 1-Line Resume / GitHub Description
+2️⃣ Admin
 
-**UoH Student Document Verification System:** Role-based platform for
-secure student document upload, automated verification, and admin
-approval with controlled access to verified records.
+Login using Admin ID and Password
 
-------------------------------------------------------------------------
+View admin dashboard
 
-## 📌 Future Enhancements
+View pending documents
 
--   Email/SMS notifications for document status\
--   Digital signature support\
--   Audit logs for verification history\
--   Cloud storage integration
+Approve or reject documents with comments
 
-------------------------------------------------------------------------
+View registered students
 
-## 👨‍💻 Author
+Logout
 
-Anjali Anumala
-DBMS Project -- University of Hyderabad
+📂 Project Structure
+uoh_document_verification/
+│
+├── Main.java
+├── User.java
+├── Student.java
+├── Admin.java
+├── Document.java
+├── VerificationSystem.java
+└── README.md
+
+🧩 Class Description
+🔹 User (Base Class)
+
+Stores common user details
+
+Implements login and password verification
+
+Provides a common dashboard interface
+
+🔹 Student (Extends User)
+
+Submits documents
+
+Views document status
+
+Displays student-specific dashboard
+
+🔹 Admin (Extends User)
+
+Verifies or rejects documents
+
+Views pending documents
+
+Displays admin-specific dashboard
+
+🔹 Document
+
+Stores document details
+
+Maintains verification status
+
+Handles approve/reject logic
+
+🔹 VerificationSystem
+
+Manages students, admins, and documents
+
+Acts as the central system controller
